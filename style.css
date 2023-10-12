@@ -1,0 +1,121 @@
+:root{
+    --color-primary: #ffffff;
+    --color-secondary:#222222;
+    --color-text: #6f6a6a;
+    --ff-titres:""
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    liste-style: none;
+    scroll-behavior: smooth;
+    text-decoration:none;
+
+}
+
+body {
+
+overflow-x: hidden;
+}
+
+.nav {
+
+    position: fixed;
+    top:0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 6rem;
+    padding: 1rem 2rem;
+    transition:0.3s ease-in;
+    background-color: rgba(5,5,5,0.894  );
+    backdrop-filter: blur(4px);
+    z-index: 1;
+    transform: translateX(0%);
+    animation: show 1s forwards;
+
+}
+
+.nav .logo{
+font-family: var(--ff-titres);
+color: var(--color-primary);
+}
+
+.nav .title {
+    font-size: 30px;
+
+}
+
+.nav .subtitle {
+
+    font-size: 20px;
+}
+
+.nav .nav-list {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav .nav-list .nav-list-item {
+
+
+    color: var(--color-primary);
+    font-size: 20px;
+    font-family: var(--ff-titres);
+    cursor: pointer;
+    transition:0.3s;
+
+}
+
+.nav .nav-list .nav-list-item:hover{
+color:darkturquoise;
+transform: translateY(-5px);
+
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.actions-item { 
+
+position: relative;
+}
+
+.actions-item i{
+
+color : var(--color-primary);
+transition : 0.3s ease-in-out;
+font-size : 20px;
+cursor: pointer;
+
+}
+
+.actions-item .count::after{
+    position :absolute;
+    content:"0";
+    font-size: 10px;
+    background-color: rgb(28, 129,131);
+    width: 14px;
+    height:14px;
+    border-radius: 50%;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.actions-item:hover{
+color: darkturquoise;
+transform: translateY(-5px);
+
+}
