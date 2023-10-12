@@ -21,6 +21,9 @@ body {
 overflow-x: hidden;
 }
 
+mark{
+    background-color: aquamarine;
+}
 .nav {
 
     position: fixed;
@@ -117,5 +120,91 @@ cursor: pointer;
 .actions-item:hover{
 color: darkturquoise;
 transform: translateY(-5px);
+
+}
+
+.section-one {
+min-height: 100vh;
+background-image: url("/home/dci-student/newfolder/frankfurt.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover ;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+padding: 2rem 4rem;
+position:relative;
+}
+
+.section-one h1 {
+font-weight: 800;
+font-size: 60px;
+font-family: var(--ff-titres);
+color: var(--color-primary);
+letter-spacing: 1px;
+animation:  show  1s forwards;
+transform: translateX(-100%)
+}
+
+@keyframes show {
+to {
+    transform: translateX(0);
+}
+
+}
+
+.section-one p {
+
+max-width: 60%;
+line-height: 25px;
+font-size: 14px;
+font-family: var(--ff-textes);
+color: var(--color-primary);
+animation:  show  1s forwards;
+transform: translateX(-100%) 
+}
+
+.section-two {
+
+    max-width: 60%;
+    margin: 6rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+.section-two .text {
+
+    font-family: var(--ff-textes);
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+    color: var(--color-text);
+
+
+}
+
+.section-two .intro{
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 800;
+    color: var(--color-secondary)
+}
+
+
+.section-two h2{
+    font-family: var(--ff-titres);
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 800;
+
+}
+
+.section-two .aside {
+   
+    padding: 2rem;
+    text-align: justify;
+    color: var(--color-primary);
+    background-color:var(--color-secondary);
 
 }
