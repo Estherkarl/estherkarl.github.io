@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="UTF-8">
+<meta name="viewport" content ="width=device-width, initial-scale=1,0">
+<title> All about me</title>
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+<header>
+    <nav class="nav">
+        <div class="logo-container">
+        <div class="logo title">Hotels</div>
+        <div class="logo sub-title">Frankfurt</div>
+        </div>
+        <ul class="nav-list" >
+            <li class="nav-list-item"> <a href ="https://fr.hotels.com/Hotel-Search?adults=2&d1=2023-10-26&d2=2023-10-28&destination=France&endDate=2023-10-28&latLong=46.227638%2C2.213749&lodging=CASTLE&regionId=59&rooms=1&semdtl=&sort=RECOMMENDED&startDate=2023-10-26&theme=&useRewards=false&userIntent=">castle</a></li>
+            <li class="nav-list-item"><a href="https://fr.hotels.com/Hotel-Search?adults=2&amenities=OCEAN_VIEW&d1=2023-10-26&d2=2023-10-28&destination=France&endDate=2023-10-28&latLong=46.227638%2C2.213749&regionId=59&rooms=1&semdtl=&sort=RECOMMENDED&startDate=2023-10-26&theme=&useRewards=false&userIntent=">View on the sea</a></li>
+            <li class="nav-list-item"><a href="https://fr.hotels.com/Hotel-Search?adults=2&amenities=SPA_ON_SITE&d1=2023-10-26&d2=2023-10-28&destination=France&endDate=2023-10-28&latLong=46.227638%2C2.213749&regionId=59&rooms=1&semdtl=&sort=RECOMMENDED&startDate=2023-10-26&theme=&useRewards=false&userIntent=">spa</a></li>
+            <li class="nav-list-item"><a href="https://fr.hotels.com/Hotel-Search?adults=2&d1=2023-10-26&d2=2023-10-28&destination=France&endDate=2023-10-28&latLong=46.227638%2C2.213749&lodging=CARAVAN_PARK&regionId=59&rooms=1&semdtl=&sort=RECOMMENDED&startDate=2023-10-26&theme=&useRewards=false&userIntent=">Camping</a></li>
+            <li class="nav-list-item"><a href="https://fr.hotels.com/Hotel-Search?adults=2&amenities=POOL&d1=2023-10-26&d2=2023-10-28&destination=France&endDate=2023-10-28&latLong=46.227638%2C2.213749&regionId=59&rooms=1&semdtl=&sort=RECOMMENDED&startDate=2023-10-26&theme=&useRewards=false&userIntent=">Swimming pool</a></li>
+        </ul>
+
+
+            
+             <div class="actions">
+                <div class="actions-item"><a href="https://www.radissonhotels.com/en-us/corporate/about-us">
+                    About us
+                    </a></div>
+            <div class="actions-item"><a href="https://www.radissonhotels.com/en-us/faq">
+               Contact us
+            </a></div>
+          
+               </div>
+    </nav>
+</header>
+
+<main>
+    <section class="section-one">
+        <h1>Registration</h1>
+        <form id="form"> 
+<input type="text" id="username" placeholder="Username" required/>
+
+<input type="email" id="email" placeholder="Email" required/>
+
+<input type="submit" value="Register">
+        </form>
+    </section>
+    
+    </body>
+    <script>
+        var form = document.getElementById('form')
+        form.addEventListener('submit',function(event){
+           event.preventDefault()
+
+           var username = document.getElementById('username').value
+
+           console.log(username)
+
+           var email = document.getElementById('email').value
+
+           console.log (email)
+
+        form.reset ()
+        }
+        
+        )
+          </script>
+
+    
+</html> 

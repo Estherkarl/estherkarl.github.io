@@ -48,11 +48,7 @@ color: var(--color-primary);
 }
 
 .nav .title {
-    font-size: 30px;Thanks to help poor people to reach their goals{
-
-        margin: 0;
-        text-emphasi-color: ;
-    }
+    font-size: 30px;
 
 }
 
@@ -90,6 +86,7 @@ transform: translateY(-5px);
     display: flex;
     align-items: center;
     gap: 1rem;
+
 }
 
 .actions-item { 
@@ -99,10 +96,23 @@ position: relative;
 
 .actions-item i{
 
-color : var(--color-primary);
+color : rgb(14, 10, 6);
 transition : 0.3s ease-in-out;
 font-size : 20px;
-cursor: pointer;
+cursor: pointer;position: fixed;
+top:0;
+display: flex;
+width: 100%;
+justify-content: space-between;
+height: 6rem;
+padding: 1rem 2rem;
+transition:0.3s ease-in;
+background-color: rgba(5, 5, 5, 0.894);
+backdrop-filter: blur(4px);
+z-index: 1;
+transform: translateX(0%);
+animation: show 1s forwards;
+
 
 }
 
@@ -129,7 +139,7 @@ transform: translateY(-5px);
 
 .section-one {
 min-height: 100vh;
-background-image: url("frankfurt.jpg");
+background-image: url("me.avif");
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover ;
@@ -213,21 +223,22 @@ transform: translateX(-100%)
 
 }
 
-.Thanks{
-    display: inline-block;
-    background-color:aquamarine;
-  border-radius: 10px;
-  border: 4px double #cccccc;
-  color: #201010;
-  text-align: center;
-  font-size: 15px;
-  padding: 10px;
-  width: 60px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 3px;
+label {
+    color: rgb(224, 60, 224);
+    border-width: 5px;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+input {
+
+    padding: 10px;
+  border: 1px solid gray;
+  background-color:#7badaf;
+  border-radius: 5px;
+  font: inherit;
+  font-weight: bold;
+  color: rgb(92, 20, 92;
 
 }
+  
